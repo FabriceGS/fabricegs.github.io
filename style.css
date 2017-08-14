@@ -1,0 +1,33 @@
+.left_column {
+    color:black;
+    font-size:12px;
+    text-align: center;
+    margin-right: 170px;
+}
+
+.right_column{
+    float: right;
+    width: 160px;
+    text-align: center;
+}
+
+#nav_container{
+    list-style-type: none;
+    margin-bottom: 15px;
+    background-color: #ededed;
+}
+
+#nav_container li{
+    display: inline-block;
+}
+
+#nav_container a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+#nav_container a:hover{
+    text-shadow: .1px 0.1px
+}
