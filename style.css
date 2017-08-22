@@ -1,33 +1,440 @@
-.left_column {
-    color:black;
-    font-size:12px;
-    text-align: center;
-    margin-right: 170px;
+/*GENERAL*/
+
+p{
+    /*text-indent: 50px;*/
+    font-family: 'Quattrocento', serif;
+    font-size: 110%;
+    line-height: 130%;
 }
 
-.right_column{
-    float: right;
-    width: 160px;
+.header{
+    font-family: "EB Garamond";
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: -1px;
+    font-size:175%;
+    height: 80px;
+    /*margin: auto;*/
+    margin-left: 10px;
+}
+
+.small_header{
     text-align: center;
 }
 
+.section1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.textType1{
+    padding-right: 10%;
+    padding-left: 1%
+}
+
+.textType2{
+    padding-left: 10%;
+    padding-right: 1%
+}
+
+body{
+    width: 100%
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+/*DONE GENERAL*/
+/*------------------------------*/
+/* NAVIGATION BAR */
 #nav_container{
+    padding: 0px;
+    /*border: 0px;*/
     list-style-type: none;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
     background-color: #ededed;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom-style:groove;
+    border-bottom-color: white;
+}
+
+#nav_buttons{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
 }
 
 #nav_container li{
     display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 130%;
+    position: relative;
+    left: -100px;
+    margin-right: 40px;
 }
 
 #nav_container a{
     display: inline-block;
     text-decoration: none;
-    padding: 5px;
+    /*margin: 100 100 0 0px;*/
     color: black;
+    
 }
 
 #nav_container a:hover{
     text-shadow: .1px 0.1px
 }
+
+#logo{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+/*DONE NAVIGATION BAR*/
+/*----------------------------------*/
+/*INDEX PAGE*/
+
+#welcome_image{
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+#fabrice{
+    width: 100%;
+    padding: 0px;
+}
+
+#my_name { 
+   float: right;
+   position: absolute; 
+   top: 250px;
+   right: 40px;
+   width: 41vw;
+   /*width: 550px;*/
+    /*top: -850px; 
+   width: 700px; */
+   /*height: 800%
+   width: 100%;*/
+}
+
+h2{
+    position: absolute;
+}
+
+h2 span{
+    color: white;
+    font-family: "EB Garamond";
+    /*font-size: 60px;*/
+    font-size: 4.5vw;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+/*DONE INDEX PAGE*/
+
+/*---------------------------------------*/
+
+/*ABOUT ME*/
+
+#about_header{
+    border-bottom-style:groove;
+    border-bottom-color: grey;
+}
+
+/*#main_about{
+    /*position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}*/
+
+#about_me_text{
+    /*position: relative;
+    top: 6vw;*/
+    display: block;
+    margin: auto;
+}
+
+
+
+#about_me_image{
+    /*float: right;*/
+    margin: 0px 50px 0px 10px;
+    /*clear: right;
+    display: inline-block;
+    vertical-align: top;*/
+}
+
+/*DONE ABOUT ME*/
+
+/*------------------------*/
+
+/*EXPERIENCE*/
+
+#exp_header{
+    border-bottom-style:groove;
+    border-bottom-color: grey;
+}
+
+#exp_text_1{
+    display: block;
+    margin: auto;
+    order: 1;
+}
+
+#exp_image_1{
+    order: 2;
+    float: right;
+    margin: 0px 10px 0px 50px;
+}
+
+#ri_seal{
+    margin-top: 30px;
+}
+
+#exp_text_2{
+    display: block;
+    margin: auto;
+}
+
+#exp_image_2{
+    float: right;
+    margin: 70px 50px 0px 10px;
+}
+
+#booth_seal{
+    margin-top: 130px;
+}
+
+#exp_text_3{
+    display: block;
+    margin: auto;
+    order: 1;
+}
+
+#exp_image_3{
+    order: 2;
+    float: right;
+    margin: 0px 10px 0px 50px;
+}
+
+/*DONE EXPERIENCE*/
+/*----------------------------*/
+/*PROJECTS*/
+
+#proj_header{
+    border-bottom-style:groove;
+    border-bottom-color: grey;
+}
+
+/*#proj_section_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}*/
+
+#proj_text_1{
+    display: block;
+    margin: auto;
+    order: 1;
+}
+
+#proj_image_1{
+    order: 2;
+    float: right;
+    margin: 0px 10px 0px 50px;
+}
+
+/*#proj_section_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}*/
+
+#proj_text_2{
+    display: block;
+    margin: auto;
+}
+
+#proj_image_2{
+    float: right;
+    margin: 70px 50px 0px 10px;
+}
+
+
+/*DONE PROJECTS*/
+/*--------------------------------*/
+/*RESUME*/
+
+#main_resume{
+    display: flex;
+    justify-content: center;
+}
+
+#resume{
+    /*flex-grow: 1;*/
+}
+
+/*DONE RESUME*/
+/*--------------------------*/
+/*FOOTER*/
+
+footer{
+  text-align: center;
+  height: 85%;
+  background-color: #00001a;
+  padding-top: 10%;
+  margin-top: 30px;
+  font-size: 200%;
+  color: white;
+}
+
+#footer_text{
+    font-size:80%;
+}
+
+#contact_buttons{
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+
+.fa{
+    /*padding: 20px;*/
+    text-align: center;
+    text-decoration: none;
+    margin:auto;
+    margin: 5px 5px 80px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+/*#github{
+    display: block;
+    width: auto;
+    margin: auto;
+}*/
+
+.fa-github{
+    background: white;
+    color: black;
+}
+
+.fa-linkedin{
+    background: #007bb5;
+    color: white; 
+}
+
+.fa-email{
+    background: red;
+    color: white; 
+}
+
+.fa-facebook{
+    background: white;
+    color: white; 
+}
+
+/*END FOOTER*/
+
+
+
+
+
+
+/*#exp_section_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}*/
+
+/*#exp_small_header_2{
+    text-align: center;
+}*/
+
+
+/*#exp_section_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}*/
+
+/*#exp_small_header{
+    text-align: center;
+}*/
+
+
+/*#experience{
+    position: relative;
+    top: calc(10px + 15vw);
+}
+
+/*#exp_header{
+    position: relative;
+    top: -50px;
+}
+
+
+
+/*
+#exp_text_1{
+    position: relative;
+    top: 6vw;
+}
+
+#exp_image_1{
+    position: relative;
+    float: right;
+    clear: right;
+    bottom: calc(-140px + 20vw);
+    margin: 0px 50px 50px 10px;
+}
+
+
+#exp_section_2{
+        position: relative;
+       /* top: 4vw;
+}
+
+#exp_text_2{
+    position: relative;
+    top: 20vw;
+}
+
+#exp_image_2{
+    position: relative;
+    float: right;
+    clear: right;
+    /*bottom: calc(-140px + 17vw);
+    margin: 0px 50px 50px 10px;*/
+    /*
+    bottom: -420px;
+    margin: 0px 50px 50px 10px;
+    clear: right;
+}*/
