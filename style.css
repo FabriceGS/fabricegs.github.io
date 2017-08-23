@@ -1,7 +1,6 @@
 /*GENERAL*/
 
 p{
-    /*text-indent: 50px;*/
     font-family: 'Quattrocento', serif;
     font-size: 110%;
     line-height: 130%;
@@ -15,7 +14,6 @@ p{
     letter-spacing: -1px;
     font-size:175%;
     height: 80px;
-    /*margin: auto;*/
     margin-left: 10px;
     border-bottom-style:groove;
     border-bottom-color:  #b88c00;
@@ -62,7 +60,6 @@ body{
 
 #nav_container{
     padding: 0px;
-    /*border: 0px;*/
     list-style-type: none;
     width: 100%;
     height: 100%;
@@ -93,7 +90,6 @@ body{
 #nav_container a{
     display: inline-block;
     text-decoration: none;
-    /*margin: 100 100 0 0px;*/
     color: black;
     
 }
@@ -132,11 +128,6 @@ body{
    top: 250px;
    right: 40px;
    width: 41vw;
-   /*width: 550px;*/
-    /*top: -850px; 
-   width: 700px; */
-   /*height: 800%
-   width: 100%;*/
 }
 
 h2{
@@ -162,21 +153,7 @@ h2 span{
 
 /*ABOUT ME*/
 
-/*#about_header{
-    border-bottom-style:groove;
-    border-bottom-color: grey;
-}*/
-
-/*#main_about{
-    /*position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}*/
-
 #about_me_text{
-    /*position: relative;
-    top: 6vw;*/
     display: block;
     margin: auto;
 }
@@ -184,11 +161,7 @@ h2 span{
 
 
 #about_me_image{
-    /*float: right;*/
     margin: 0px 50px 0px 10px;
-    /*clear: right;
-    display: inline-block;
-    vertical-align: top;*/
 }
 
 /*DONE ABOUT ME*/
@@ -196,11 +169,6 @@ h2 span{
 /*------------------------*/
 
 /*EXPERIENCE*/
-
-/*#exp_header{
-    border-bottom-style:groove;
-    border-bottom-color: grey;
-}*/
 
 #exp_text_1{
     display: block;
@@ -251,22 +219,11 @@ h2 span{
 .tabcontent{
     display: none;
     padding: 50px;
-    /*margin-bottom: 100px;*/
     text-align: center;
 }
 
 .projectContent{
     display: flex;
-    /*justify-content: space-between;*/
-}
-
-.projectBody{
-    /*font-size: 20px;
-    font-family: 'Quattrocento', serif;
-    line-height: 115%;
-    color: black;
-    margin-left: 5%;
-    width: 60%;*/
 }
 
 .projectImage{
@@ -281,7 +238,6 @@ h2 span{
     letter-spacing: -1px;
     font-size:175%;
     height: 30px;
-    /*margin: auto;*/
 }
 
 .tab{
@@ -328,18 +284,17 @@ h2 span{
     justify-content: center;
 }
 
-#resume{
-    /*flex-grow: 1;*/
-}
-
 /*DONE RESUME*/
 /*--------------------------*/
 /*FOOTER*/
 
 footer{
-  /*text-align: center;*/
   height: 85%;
-  background-color: #00001a;
+  background-color: #101000;
+  /*#00001a
+  #b88c00
+  #cf0004
+  grey */
   padding-top: 10%;
   font-size: 200%;
   color: white;
@@ -366,12 +321,6 @@ footer{
     opacity: 0.7;
 }
 
-/*#github{
-    display: block;
-    width: auto;
-    margin: auto;
-}*/
-
 .fa-github{
     background: white;
     color: black;
@@ -393,118 +342,4 @@ footer{
 }
 
 /*END FOOTER*/
-
-
 /*------------------------------------*/
-/*#proj_header{
-    border-bottom-style:groove;
-    border-bottom-color: grey;
-}
-
-/*#proj_section_1{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#proj_text_1{
-    display: block;
-    margin: auto;
-    order: 1;
-}
-
-#proj_image_1{
-    order: 2;
-    float: right;
-    margin: 0px 10px 0px 50px;
-}
-
-/*#proj_section_2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#proj_text_2{
-    display: block;
-    margin: auto;
-}
-
-#proj_image_2{
-    float: right;
-    margin: 70px 50px 0px 10px;
-}*/
-
-/*-------------------------------------*/
-
-
-/*#exp_section_2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}*/
-
-/*#exp_small_header_2{
-    text-align: center;
-}*/
-
-
-/*#exp_section_1{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}*/
-
-/*#exp_small_header{
-    text-align: center;
-}*/
-
-
-/*#experience{
-    position: relative;
-    top: calc(10px + 15vw);
-}
-
-/*#exp_header{
-    position: relative;
-    top: -50px;
-}
-
-
-
-/*
-#exp_text_1{
-    position: relative;
-    top: 6vw;
-}
-
-#exp_image_1{
-    position: relative;
-    float: right;
-    clear: right;
-    bottom: calc(-140px + 20vw);
-    margin: 0px 50px 50px 10px;
-}
-
-
-#exp_section_2{
-        position: relative;
-       /* top: 4vw;
-}
-
-#exp_text_2{
-    position: relative;
-    top: 20vw;
-}
-
-#exp_image_2{
-    position: relative;
-    float: right;
-    clear: right;
-    /*bottom: calc(-140px + 17vw);
-    margin: 0px 50px 50px 10px;*/
-    /*
-    bottom: -420px;
-    margin: 0px 50px 50px 10px;
-    clear: right;
-}*/
