@@ -59,6 +59,7 @@ body{
 /*DONE GENERAL*/
 /*------------------------------*/
 /* NAVIGATION BAR */
+
 #nav_container{
     padding: 0px;
     /*border: 0px;*/
@@ -85,7 +86,7 @@ body{
     padding-bottom: 10px;
     font-size: 130%;
     position: relative;
-    left: -100px;
+    left: -1vw;
     margin-right: 40px;
 }
 
@@ -103,8 +104,9 @@ body{
 
 #logo{
     padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 10px;
+    padding-bottom: 2px;
+    margin-left: 20px;
+    height: 50px;
 }
 
 /*DONE NAVIGATION BAR*/
