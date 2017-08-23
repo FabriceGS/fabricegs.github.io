@@ -110,8 +110,9 @@
 			</p>
 
 			<p>
-			Every morning I would send reports on businesseses looking to expand to the Executive Leadership Team. I also developed a macro program to quickly analyze state business environments which our team now uses when convincing companies to move to Rhode Island (file <a href="images/battlecards080917.xlsm">here</a>). Finally, I wrote a law cutting red tape from the food truck licensing process by centralizing power with the state, R.I.G.L. 5.89.1 (more information <a href="index.html#projects">here</a>).
+			Every morning I would send reports on businesseses looking to expand to the Executive Leadership Team. I also developed a macro program to quickly analyze state business environments which our team now uses when convincing companies to move to Rhode Island (more information <a href="index.html#proj_header" onclick="openBattleCards();">here</a>). Finally, I wrote a law cutting red tape from the food truck licensing process by centralizing power with the state, R.I.G.L. 5.89.1 (more information <a href="index.html#proj_header" onclick="openFoodTrucks();">here</a>).
 			</p>
+
 		</div>
 	</div>
 
@@ -135,7 +136,105 @@
 
 
 
-<div id="projects">
+
+<div id ="proj_header" class="header">
+		<h2> Projects <h2>
+</div>
+
+<div id="projectsNav">
+	<button id="tablink1" class="tab" onclick="openProj('proj_section_1', this, '#ff751a')" id="defaultOpen">Othello</button>
+	<button id="tablink2" class="tab" onclick="openProj('proj_section_2', this, '#0066ff')">Food Trucks</button>
+	<button id="tablink3" class="tab" onclick="openProj('proj_section_3', this, '#0066ff')">Battle Cards</button>
+</div>
+
+<div id="proj_section_1" class="tabcontent">
+	<div class="projectContent">
+		<img id="othello" class="projectImage" src= "images/othello1.jpg" style="width:40%;height:40%;margin:auto;"/>
+		
+		<div class="projectBody">
+			<div class="projectHeading">
+				<h3> Othello </h3>
+			</div>
+
+			<p id="rigl8951"><a href="https://github.com/FabriceGS/Othello">Code</a></p>
+
+			<p id="proj_text_1"> My capstone project in Intro to CS was a fully functional Othello Java program with human to human, human to computer and computer to computer game play. The "AI" was developed using a MiniMax approach--essentially looking a few turns ahead to see which move gives it the best outcome.</p>
+		</div>
+
+	</div>
+</div>
+
+<div id="proj_section_2" class="tabcontent">
+	<div class="projectContent">
+		<img id="food_truck" class="projectImage" src="images/foodtruck.jpg" style="width:40%;height:40%;margin:auto;"/>
+		<div class="projectBody">
+			<div class="projectHeading">
+				<h3> Food Trucks </h3>
+			</div>
+
+			<p id="rigl8951"> <a href="images/foodtruck.docx">File</a> </p>
+
+			<p id="proj_text_2"> The licensing process in Rhode Island is so archaic that food trucks still operate under the same rules as "hawkers and peddlers" whereby every single municipality gets to make up its own rules about licenses. And some cities really go overboard. For example, in Cranston food trucks must stay 1,000 feet away from any eating establishment, carry a GPS tracking device and report twice daily to a commisary (<a href="http://ij.org/action-post/mobile-vending-hits-roadblocks-in-rhode-island/">read more</a> by the Providence Journal). All this makes it very hard for food trucks to set up shop in the state. And who doesn't like food trucks?</p>
+
+			<p> To fix this, I wrote R.I.G.L. 5.89.1 which centralizes certain key aspects of the licensing process with the state, creating a one stop shop that provides food truck licenses which can be taken anywhere in the state.</p>
+		</div>
+	</div>
+</div>
+
+<div id="proj_section_3" class="tabcontent">
+	<div class="projectContent">
+		<img id="battle_cards" class="projectImage" src="images/battlecards.jpg" style="width:40%;height:40%;margin:auto;"/>
+		<div class="projectBody">
+			<div class="projectHeading">
+				<h3> Battle Cards </h3>
+			</div>
+			<p id="battle_cards_subhead"> <a href="images/battlecards080917.xlsm">File</a> </p>
+			<p id="proj_text_2"> The Executive Office of Commerce is essentially Rhode Island's sales team. We scout out businesses that look like they might expand, we court them and we sell them on moving to Rhode Islnd. </p>
+
+			<p> Our team encountered a problem however. There was no reliable database to compare state business environments and a sales team is only as good as its data.  I solved that problem with this program. A month long project--half of which was research and the other half of which was coding in VBA--the Battle Cards are an effective, easy to use program to view and effectively deploy relevant information in the field. This document is currently used by the Executive Office of Commerce when courting a business. </p>
+		</div>
+	</div>
+</div>
+
+<script>
+
+function openProj(projName, elmnt) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    // Show the specific tab content
+    document.getElementById(projName).style.display = "block";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("tablink1").click();
+
+	function openBattleCards(){
+		if (navigator.userAgent.match(/Chrome|AppleWebKit/)) { 
+   			window.location.href = "#proj_section_3";
+   			window.location.href = "#proj_section_3";  /* these take twice */
+		} else {
+    			window.location.hash = "proj_section_3";
+		}
+		document.getElementById("tablink3").click();
+	}
+		
+	function openFoodTrucks(){
+		if (navigator.userAgent.match(/Chrome|AppleWebKit/)) { 
+   			window.location.href = "#proj_section_2";
+   			window.location.href = "#proj_section_2";  /* these take twice */
+		} else {
+    			window.location.hash = "proj_section_2";
+		}
+		document.getElementById("tablink2").click();
+	}
+
+</script>
+
+<!--<div id="projects">
 	<div id ="proj_header" class="header">
 		<h2> Projects <h2>
 	</div>
@@ -168,6 +267,8 @@
 
 
 </div>
+-->
+
 
 <footer>
 
@@ -184,6 +285,7 @@
 		<a href="https:/www.github.com/fabricegs" class="fa fa-github"><img id="github" src= "images/github.png" width="80"/> </a>
 
 		<a href="https://www.facebook.com/fabrice.guyotsionnest" class="fa fa-facebook"><img id="facebook" src="images/fb.jpg" width="80"/> </a>
+
 	</div>
 
 

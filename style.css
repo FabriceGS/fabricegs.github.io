@@ -17,6 +17,8 @@ p{
     height: 80px;
     /*margin: auto;*/
     margin-left: 10px;
+    border-bottom-style:groove;
+    border-bottom-color:  #b88c00;
 }
 
 .small_header{
@@ -68,7 +70,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom-style:groove;
-    border-bottom-color: white;
+    border-bottom-color: #cf0004;
 }
 
 #nav_buttons{
@@ -158,10 +160,10 @@ h2 span{
 
 /*ABOUT ME*/
 
-#about_header{
+/*#about_header{
     border-bottom-style:groove;
     border-bottom-color: grey;
-}
+}*/
 
 /*#main_about{
     /*position: absolute;
@@ -193,10 +195,10 @@ h2 span{
 
 /*EXPERIENCE*/
 
-#exp_header{
+/*#exp_header{
     border-bottom-style:groove;
     border-bottom-color: grey;
-}
+}*/
 
 #exp_text_1{
     display: block;
@@ -244,45 +246,76 @@ h2 span{
 /*----------------------------*/
 /*PROJECTS*/
 
-#proj_header{
-    border-bottom-style:groove;
-    border-bottom-color: grey;
+.tabcontent{
+    display: none;
+    padding: 50px;
+    /*margin-bottom: 100px;*/
+    text-align: center;
 }
 
-/*#proj_section_1{
-    width: 100%;
+.projectContent{
     display: flex;
-    flex-direction: row;
-}*/
-
-#proj_text_1{
-    display: block;
-    margin: auto;
-    order: 1;
+    /*justify-content: space-between;*/
 }
 
-#proj_image_1{
-    order: 2;
-    float: right;
-    margin: 0px 10px 0px 50px;
+.projectBody{
+    /*font-size: 20px;
+    font-family: 'Quattrocento', serif;
+    line-height: 115%;
+    color: black;
+    margin-left: 5%;
+    width: 60%;*/
 }
 
-/*#proj_section_2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}*/
-
-#proj_text_2{
-    display: block;
-    margin: auto;
+.projectImage{
+    padding-right: 30px;
 }
 
-#proj_image_2{
-    float: right;
-    margin: 70px 50px 0px 10px;
+.projectHeading{
+    font-family: "EB Garamond";
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: -1px;
+    font-size:175%;
+    height: 30px;
+    /*margin: auto;*/
 }
 
+.tab{
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.3%;
+}
+
+#tablink1{
+    background-color: #b88c00;
+}
+
+#tablink1:hover {
+    opacity: .7;
+}
+
+#tablink2 {
+    background-color: #cf0004;
+}
+
+#tablink2:hover {
+    opacity: .7;
+}
+
+#tablink3 {
+    background-color: grey;
+}
+
+#tablink3:hover {
+    opacity: .7;
+}
 
 /*DONE PROJECTS*/
 /*--------------------------------*/
@@ -302,16 +335,16 @@ h2 span{
 /*FOOTER*/
 
 footer{
-  text-align: center;
+  /*text-align: center;*/
   height: 85%;
   background-color: #00001a;
   padding-top: 10%;
-  margin-top: 30px;
   font-size: 200%;
   color: white;
 }
 
 #footer_text{
+    text-align: center;
     font-size:80%;
 }
 
@@ -322,13 +355,9 @@ footer{
 }
 
 .fa{
-    /*padding: 20px;*/
-    text-align: center;
     text-decoration: none;
-    margin:auto;
-    margin: 5px 5px 80px 50px;
+    margin: 5px 0px 80px 10px;
     height: 50px;
-    width: 50px;
 }
 
 .fa:hover{
@@ -364,8 +393,47 @@ footer{
 /*END FOOTER*/
 
 
+/*------------------------------------*/
+/*#proj_header{
+    border-bottom-style:groove;
+    border-bottom-color: grey;
+}
 
+/*#proj_section_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
+#proj_text_1{
+    display: block;
+    margin: auto;
+    order: 1;
+}
+
+#proj_image_1{
+    order: 2;
+    float: right;
+    margin: 0px 10px 0px 50px;
+}
+
+/*#proj_section_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#proj_text_2{
+    display: block;
+    margin: auto;
+}
+
+#proj_image_2{
+    float: right;
+    margin: 70px 50px 0px 10px;
+}*/
+
+/*-------------------------------------*/
 
 
 /*#exp_section_2{
