@@ -59,7 +59,7 @@
 		<div id="about_text" class="textType1">
 			<h3 id="about_small_header" class="small_header"> Hi! </h3>
 			<p id="about_me_text"> 
-			I like coding and politics. When I came to Brown University I knew I wanted to get involved in government. But I didn't know how. After I took my first CS class at Brown, I realized I really enjoyed coding and now I'm majoring in Political Science and Computer Science. All this is coming to a head in my biggest project to date: Bears@Work. As the founder and CEO of Bears@Work I am working with Governor Gina Raimondo to create real world, $15/hr internships for beginners in Brown CS. 
+			I like coding and politics. When I came to Brown University I knew I wanted to get involved in government. But I didn't know how. After I took my first CS class at Brown, I realized I really enjoyed coding and now I'm concentrating in Political Science and Computer Science. All this is coming to a head in my biggest project to date: Bears@Work. As the founder and director of Bears@Work I am working with Governor Gina Raimondo to create real world, $15/hr internships for beginners in Brown CS. 
 			</p>
 
 			<p>When I'm not trying to create the next employment agency, I like to row boats (I walked on to Brown Men's Crew),  prosecute murderers in Brown Mock Trial as captain of my team and be an entrepreneur.
@@ -89,7 +89,7 @@
 			<h3 id="exp_small_header" class="small_header">Bears@Work </h3>
 
 			<p id="exp_text_1"> 
-			Stanford students intern at Tesla and Apple in Palo Alto. University of Colorado students study at the Boulder Tech Center. And Brown students? We spread across the nation to find our internships. This is part of the reason approximately only 1 out of every 150 CS students stays in Rhode Island after graduation. 
+			Stanford students intern at Tesla and Apple in Palo Alto. University of Colorado students study at the Boulder Tech Center. And Brown students? We spread across the nation to find our internships. This is part of the reason only 1 out of every 125 Brown CS students stays in Rhode Island after graduation. 
 			</p>
 
 			<p>
@@ -131,7 +131,7 @@
 			<h3 id="exp_small_header_3" class="small_header"> University of Chicago <br> Booth School of Business  <br> Professor Steven Kaplan Research Intern</h3>
 
 
-			<p id="exp_text_3"> The summer before my senior year at Lab, I worked for Neubauer Professor of Entrepreneurship Steven Kaplan at the Booth School of Business. There, I researched the effect of activist investors on executive compensation in Fortune 500 firms using Stata and Wharton's WRDS database. The somewhat surprising result was that in the year immediately succeeding an activist investor "event," executive compensation fell. But just two years later, compensation was at the same, if not higher levels that it had been.
+			<p id="exp_text_3"> The summer before my senior year at The University of Chicago's Laboratory High School, I worked for Neubauer Professor of Entrepreneurship Steven Kaplan at the Booth School of Business. There, I researched the effect of activist investors on executive compensation in Fortune 500 firms using Stata and Wharton's WRDS database. The somewhat surprising result was that in the year immediately succeeding an activist investor "event," executive compensation fell. But just two years later, compensation was at the same, if not higher levels that it had been.
 		</p>
 
 		</div>
@@ -145,9 +145,9 @@
 </div>
 
 <div id="projectsNav">
-	<button id="tablink1" class="tab" onclick="openProj('proj_section_1', this, '#ff751a')" id="defaultOpen">Othello</button>
-	<button id="tablink2" class="tab" onclick="openProj('proj_section_2', this, '#0066ff')">Food Trucks</button>
-	<button id="tablink3" class="tab" onclick="openProj('proj_section_3', this, '#0066ff')">Battle Cards</button>
+	<button id="tablink1" class="tab" onclick="openProj('proj_section_1', 'tablink1', '#ff751a')" id="defaultOpen">Othello</button>
+	<button id="tablink2" class="tab" onclick="openProj('proj_section_2', 'tablink2', '#0066ff')">Food Trucks</button>
+	<button id="tablink3" class="tab" onclick="openProj('proj_section_3', 'tablink3', '#0066ff')">Battle Cards</button>
 </div>
 
 <div id="proj_section_1" class="tabcontent">
@@ -210,6 +210,11 @@ function openProj(projName, elmnt) {
     }
     // Show the specific tab content
     document.getElementById(projName).style.display = "block";
+    document.getElementById("tablink1").style["boxShadow"] = "0px 0px 0px 0px #888888"
+    document.getElementById("tablink2").style["boxShadow"] = "0px 0px 0px 0px #888888"
+    document.getElementById("tablink3").style["boxShadow"] = "0px 0px 0px 0px #888888"
+    document.getElementById(elmnt).style["boxShadow"] = "0px 1px 5px 1px #888888"
+    /*"inset 0 0 1px";*/
 }
 
 // Get the element with id="defaultOpen" and click on it
