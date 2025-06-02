@@ -1,5 +1,9 @@
 /*GENERAL*/
 
+body{
+    opacity: 0.1;
+}
+
 p{
     font-family: 'Quattrocento', serif;
     font-size: 110%;
