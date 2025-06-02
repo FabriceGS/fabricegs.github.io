@@ -136,7 +136,7 @@ body{
    top: 250px;
    right: 40px;
    width: 41vw; */
-    position: relative;
+    position: relative !important;
 }
 
 h2{
